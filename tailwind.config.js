@@ -2,32 +2,30 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    screens:{
+    screens: {
       sm: '576px',
       md: '768px',
       lg: '992px',
-      xl: '1200px',
+      xl: '1200px'
     },
-    container:{
+    container: {
       center: true,
-      padding: '1rem',
+      padding: '1rem'
     },
     extend: {
-      fontFamily:{
-        poppins: 'Poppins',
-        roboto: 'Roboto'
+      fontFamily: {
+        poppins: "'Poppins', sans-serif",
+        roboto: "'Roboto', sans-serif",
       },
-      colors:{
-        primary: '#FD3D57',
-        secondary: 'blue',
+      colors: {
+        primary: "#FD3D57",
       }
     },
   },
   variants: {
-    extend: {
-      display: ['group-hover'],
-      visibility: ['group-hover'],
-    },
+    extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
