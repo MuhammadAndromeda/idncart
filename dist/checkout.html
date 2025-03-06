@@ -73,7 +73,7 @@
                 </span>
                 <span class="capitalize ml-2 text-white">All Categories</span>
                 
-                <div class="absolute w-full left-0 top-full bg-white shadow-sm py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                <div class="absolute w-full left-0 top-full bg-white shadow-sm py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-1 transition duration-300 invisible group-hover:visible">
                     <!-- single category -->
                         <a href="" class="flex items-centers px-6 py-3 hover:bg-gray-100 transition">
                             <img class="w-5 h-5 object-contain" src="images/icons/sofa.svg" alt="">
@@ -121,59 +121,46 @@
     </nav>
     <!-- navbar end -->
 
-    <!-- login form -->
-    <div class="container py-16">
-        <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
-            <h2 class="uppercase text-2xl font-medium mb-1">Register</h2>
-            <p class="text-gray-600 text-sm mb-6">Register if you are returning customer</p>
-            <form action="">
-                <div class="space-y-4">
-                    <div>
-                        <label class="text-gray-600 mb-2 block">Fullname<span class="text-primary">*</span></label>
-                        <input type="text" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:outline-none placeholder-gray-400" placeholder="Jhon Doe">
+    <!-- breadcrumb -->
+    <div class="container py-4 flex items-center gap-3">
+        <a class="text-primary text-base" href="index.html">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <span class="text-gray-400 text-sm">
+            <i class="fa-solid fa-chevron-right"></i>
+        </span>
+        <a class="text-gray-600 text-base" href="shop.html">
+            <p>Shop</p>
+        </a>
+    </div>
+    <!-- breadcrumb end -->
+
+    <!-- checkout wrapper -->
+    <div class="container grid grid-cols-12 items-start pb-16 pt-4">
+        <!-- Checkout Form -->
+        <div class="col-span-8 border border-gray-200 p-4 shadow-sm">
+            <h3 class="text-lg font-medium capitalize">checkout</h3>
+            <div class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="">
+                        <label for="" class="text-gray-600 mb-2 block ">First Name<span class="text-primary">*</span></label>
+                        <input type="text" class="block w-full border border-gray-300 px-4 py-3 text-sm text-gray-600 focus:border-primary focus:outline-none rounded" placeholder="Bambang">
                     </div>
-                    <div>
-                        <label class="text-gray-600 mb-2 block">Email address<span class="text-primary">*</span></label>
-                        <input type="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:outline-none placeholder-gray-400" placeholder="example@mail.com">
-                    </div>
-                    <div>
-                        <label class="text-gray-600 mb-2 block">Password<span class="text-primary">*</span></label>
-                        <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:outline-none placeholder-gray-400" placeholder="Enter your password">
-                    </div>
-                    <div>
-                        <label class="text-gray-600 mb-2 block">Confirm Password<span class="text-primary">*</span></label>
-                        <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:outline-none placeholder-gray-400" placeholder="Confirm your password">
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center">
-                            <input class="text-primary focus:ring-0 rounded-sm cursor-pointer" type="checkbox" id="agreement">
-                            <label class="text-gray-600 ml-3 cursor-pointer" for="agreement">I have read and agree to the <a href="" class="text-primary">terms and conditions</a></label>
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <button type="submit" class="bg-primary block w-full text-center text-white py-2 border border-primary hover:bg-transparent hover:text-primary rounded uppercase font-roboto font-medium transition">register</button>
+                    <div class="">
+                        <label for="" class="text-gray-600 mb-2 block ">Last Name<span class="text-primary">*</span></label>
+                        <input type="text" class="block w-full border border-gray-300 px-4 py-3 text-sm text-gray-600 focus:border-primary focus:outline-none rounded" placeholder="Sugiono">
                     </div>
                 </div>
-            </form>
-            <!-- login with -->
-            <div class="mt-6 flex justify-center relative">
-                <div class="uppercase text-gray-600 px-3 bg-white z-10 relative">or login with</div>
-                <div class="absolute left-0 top-3 w-full border-b-2 border-gray-200"></div>
             </div>
-            <div class="flex mt-4 gap-4">
-                <a href="" class="bg-blue-800 w-1/2 py-2 text-center text-white rounded uppercase font-roboto font-medium text-sm hover:bg-blue-700">
-                    <i class="mr-2 fa-brands fa-facebook"></i> facebook
-                </a>
-                <a href="" class="bg-gray-900 w-1/2 py-2 text-center text-white rounded uppercase font-roboto font-medium text-sm hover:bg-gray-700">
-                    <i class="mr-2 fa-brands fa-github"></i> github
-                </a>
-            </div>
-            <!-- login with end -->
-            <p class="mt-4 text-gray-600 text-center">Already have account? <a href="login.html" class="text-primary">Login now</a></p>
         </div>
-    </div>
-    <!-- login form end -->
+        <!-- Checkout Form end -->
 
+        <!-- Checkout Card -->
+        <div class="col-span-4"></div>
+        <!-- Checkout Card end -->
+    </div>
+    <!-- checkout wrapper end -->
+    
     <!-- footer -->
     <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
         <div class="container grid grid-cols-3">
